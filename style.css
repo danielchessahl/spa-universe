@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    font-size: 62,5%;
+
+    --weight-title: bold;
+
+    --color-font: #E1E1E6;
+    
+    --color-menu: #C4C4CC;
+    --color-menuselect: #FFFFFF;
+
+    --color-btn: #FFFFFF;
+    --color-btnselect: #02799D;
+    --color-btn-bg: #FFFFFF;
+
+    --size-title: 4.8rem;
+    --size-text: 1.8rem;
+
+
+}
+
+
+body {
+    background-image: url('./assets/home.png') no-repeat;
+    background-size: 100% 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--size-text);
+}
+
+.active {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 4rem 7.2rem;
+    gap: 3.2rem;
+}
+
+.btnLogo {
+ width: 5rem;
+ height: 4.2rem;
+}
+
+
+.menu a {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+a, img {
+    color: var(--color-menu);
+    gap: 3.2rem;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 32px 0 0;
+}
+
+a {
+    font-size: 2.1rem;
+}
+
+a:hover {
+    color: var(--color-menuselect);
+    font-weight: var(--weight-title);
+    font-size: 2.4rem;
+}   
+
+.home {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    margin-top: -13rem;
+    place-items: center;;
+
+    color: var(--color-font);
+}
+
+.home h1 {
+    font-size: var(--size-title);
+    margin-bottom: 2.4rem;
+}
+
+.home a {
+    font-size: 1.4rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 1.2rem 3.2rem;
+
+    background: none;
+    color: var(--color-btn);
+    cursor: pointer;
+}
+
+.home a:hover {
+    background: var(--color-btn-bg);
+    color: var(--color-btnselect);
+}
+
+
+.universe, .exploration {
+    width: 64.8rem;
+    height: 20rem;
+    margin: 6.3rem, 0 0 10.2rem;
+    color: var(--color-font);
+    size: var(--size-text);
+    margin-left: 10rem;
+}
+
+.universe h1, .exploration h1 {
+    size: var(--size-title);
+    margin-top: 6.3rem;
+    margin-bottom: 1.6rem;
+}
+
+.notFound {
+    text-align: center;
+    align-items: center;
+}
+
+.notFound a {
+    color: black;
+}
